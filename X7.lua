@@ -1,6 +1,6 @@
 SetupPages = {
    {
-      title = "PIDs",
+      title = "PIDs Configurator",
       text = {
          { t = "P",      x =  48,  y = 14 },
          { t = "I",      x =  76,  y = 14 },
@@ -25,7 +25,7 @@ SetupPages = {
       },
    },
    {
-      title = "Rates",
+      title = "Rates Configurator",
       text = {
          { t = "RC",     x =  41,  y = 11, to = SMLSIZE },
          { t = "Rate",   x =  41,  y = 18, to = SMLSIZE },
@@ -51,15 +51,15 @@ SetupPages = {
       },
    },
    {
-      title = "VTX",
+      title = "VTX Configurator",
       text = {},
       fields = {
          -- Super Rate
          { t = "Band", x = 1, y = 12, sp = 34, i=2, min=1, max=5, table = { "A", "B", "E", "F", "R" } },
-         { t = "Ch",   x = 1, y = 22, sp = 34, i=3, min=1, max=8 },
-         { t = "Pw",   x = 1, y = 32, sp = 34, i=4, min=1 },
-         { t = "Pit",  x = 1, y = 42, sp = 34, i=5, min=0, max=1, table = { [0]="OFF", "ON" } },
-         { t = "Dev",  x = 60, y = 12, sp = 34, i=1, ro=true, table = {[3]="SA",[4]="Tramp",[255]="None"} },
+         { t = "Channel",   x = 1, y = 22, sp = 34, i=3, min=1, max=8 },
+         { t = "Power",   x = 1, y = 32, sp = 34, i=4, min=1 },
+         { t = "Pitmode",  x = 1, y = 42, sp = 34, i=5, min=0, max=1, table = { [0]="OFF", "ON" } },
+         { t = "Dev",  x = 60, y = 12, sp = 34, i=1, ro=true, table = {[3]="SA",[4]="Stealth",[255]="None"} },
          { t = "Freq", x = 60, y = 22, sp = 34, i="f", ro=true },
       },
    }
